@@ -1,0 +1,15 @@
+{
+  "name": "saucedemo-cypress",
+  "version": "1.0.0",
+  "description": "Desafío técnico: automatización E2E del flujo de compra en Sauce Demo con Cypress",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^16.1.0"
+  }
+}
