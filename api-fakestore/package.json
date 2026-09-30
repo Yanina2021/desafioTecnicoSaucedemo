@@ -1,0 +1,16 @@
+{
+  "name": "api-fakestore",
+  "version": "1.0.0",
+  "description": "Desafío técnico: pruebas de API de Fake Store API con Cypress",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:auth": "cypress run --spec cypress/e2e/auth.cy.js",
+    "test:carts": "cypress run --spec cypress/e2e/carts.cy.js",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "cypress": "^16.1.0"
+  }
+}

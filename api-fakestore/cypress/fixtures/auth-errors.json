@@ -1,0 +1,4 @@
+{
+  "invalidCredentials": "username or password is incorrect",
+  "missingCredentials": "username and password are not provided in JSON format"
+}

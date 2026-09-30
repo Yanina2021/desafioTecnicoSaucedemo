@@ -8,21 +8,23 @@ Repositorio con los dos desafíos. Cada carpeta es un proyecto Cypress **indepen
 | [`ui-saucedemo/`](ui-saucedemo/) | 2. Automatización E2E UI – Sauce Demo | [ui-saucedemo/README.md](ui-saucedemo/README.md) |
 
 ## Requisitos
-- Node.js 22 o superior (lo exige Cypress 16)
+- Node.js 22 o superior (lo exige Cypress 16).
+  Si usan nvm y tienen otra versión (por ejemplo la 20), en la raíz del repo: `nvm install` (instala la 22 si no la tienen) y `nvm use` (la activa). Ambos toman la versión de `.nvmrc`.
+  En Windows, nvm-windows no lee `.nvmrc`: usar `nvm install 22` y `nvm use 22`.
 - npm
 
 ## Ejecución rápida
 ```bash
-git clone https://github.com/Yanina2021/saucedemo-cypress.git
-cd saucedemo-cypress
+git clone https://github.com/Yanina2021/desafioTecnicoSaucedemo.git
+cd desafioTecnicoSaucedemo
 
 # API (antes, configurar credenciales: ver api-fakestore/README.md)
-cd api-fakestore
+cd api-fakestore       # pararse dentro de la carpeta de la API
 npm install
 npm test
 
 # UI
-cd ../ui-saucedemo
+cd ../ui-saucedemo     # pararse dentro de la carpeta de la UI
 npm install
 npm test
 ```
